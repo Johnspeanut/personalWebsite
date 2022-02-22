@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Qiong Peng's Website</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/7d56702636.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'sidebar content ';
+        grid-template-rows: 0.9fr 2fr;
+        grid-template-columns: 0.9fr 2fr;
+      }
+      /* Header*/
+      header {
+        grid-area: header;
+        margin-top: -30px;
+      }
+      /* Content*/
+      content {
+        position: relative;
+        grid-area: content;
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+      sidebar {
+        grid-area: sidebar;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="shift">
+          <h1>Welcome to <span> Qiong Peng's Website</span></h1>
+          <h1></h1>
+          <ul class="navbar">
+            <div class="dropdown">
+              <li><a class="current" href="/personal_website.html">HOME</a></li>
+              <div class="dropdown-content" role="menu">
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#certification">Certification</a>
+                <a href="#skill">Skill</a>
+              </div>
+            </div>
+            <li><a href="/project.html" target="_parent">PROJECTs</a></li>
+            <li>
+              <a href="/publication.html" target="_parent">publications</a>
+            </li>
+            <li><a href="/algorithms.html">Algorithms</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <sidebar>
+        <div>
+          <img
+            class="definePhoto"
+            src="/images/qionpeng2.png"
+            alt="HTML5 Icon"
+          />
+          <h2>Qiong(Joe) Peng</h2>
+          <div class="sidebarText">
+            Master candidate in Computer Science Align
+          </div>
+          <div class="sidebarText">Northeastern University, Seattle, WA</div>
+          <div class="sidebarText">Expected graduation date:April, 2023</div>
+          <div class="sidebarText">
+            Looking for Software engineer internship/Co-op
+          </div>
+          <p>
+            <a class="defineText" href="/pdf/resume.pdf">Resume </a
+            ><i class="fa-solid fa-file" style="color: #3f51b5"></i>
+          </p>
+          <p class="defineText">
+            pengqiong2022fall@gmail.com
+            <i class="fa-solid fa-at" style="color: #3f51b5"></i>
+          </p>
+          <p class="defineText">
+            <a
+              href="https://scholar.google.com/citations?hl=en&user=eX6BtWoAAAAJ&view_op=list_works&sortby=pubdate"
+              >Google Scholar Citations</a
+            >
+            <a href="https://www.linkedin.com/in/qiong-peng-joe/">LinkedIn</a>
+            <a href="https://github.com/Johnspeanut">Github</a>
+          </p>
+        </div>
+        <a class="defineText" href="#certification">Certification</a>
+        <a class="defineText" href="#">Front End</a>
+        <a class="defineText" href="#">Back End</a>
+        <a class="defineText" href="#">Cloud</a>
+        <a class="defineText" href="#">Algorithms</a>
+      </sidebar>
+
+      <content class="defineTable">
+        <div class="defineTable">
+          <span>
+            <h3 id="education">
+              <i class="fa-solid fa-user-graduate" style="color: #3f51b5"></i
+              ><span class="bold"> EDUCATION</span>
+            </h3>
+            <table width="100%">
+              <colgroup></colgroup>
+              <tr>
+                <td>Northeastern University, Seattle WA</td>
+                <td>Master in Computer Science Align</td>
+                <td>Sep,2020-Apr,2023</td>
+              </tr>
+              <tr>
+                <td>University of Maryland,College Park,MD</td>
+                <td>PH.D. in Urban Planning</td>
+                <td>Aug,2015-May,2020</td>
+              </tr>
+            </table> </span
+          ><br /><br />
+
+          <span>
+            <h3 id="experience">
+              <i class="fa-solid fa-briefcase" style="color: #3f51b5"></i
+              ><span class="bold"> EXPERIENCE</span>
+            </h3>
+            <table width="100%">
+              <colgroup></colgroup>
+              <tr>
+                <td>Audere Inc</td>
+                <td>Software Engineer Intern</td>
+                <td>Jul,2021-Dec,2021</td>
+              </tr>
+              <!-- <tr>
+                <td>Northeastern University</td>
+                <td>Teaching Assistant</td>
+                <td>Jan,2021-Feb,2022</td>
+              </tr> -->
+            </table> </span
+          ><br /><br />
+
+          <span>
+            <h3 id="certification">
+              <i class="fa-solid fa-certificate" style="color: #3f51b5"></i
+              ><span class="bold"> CERTIFICATION</span>
+            </h3>
+
+            <!-- <ul>
+              <li class="square">
+                <div>Certified Solutions Architect-Associate</div>
+                <div>Amazon Web Services</div>
+                <div>Expires Jan 2025</div>
+              </li>
+
+              <li class="square">
+                <div>Certified Cloud Practioner</div>
+                <div>Amazon Web Services</div>
+                <div>Expires Jan 2025</div>
+              </li>
+
+            </ul> -->
+
+            <table width="100%">
+              <colgroup></colgroup>
+              <tr>
+                <td>Certified Solutions Architect-Associate</td>
+                <td>Amazon Web Services</td>
+                <td>Expires Jan 2025</td>
+              </tr>
+              <tr>
+                <td>Certified Cloud Practioner</td>
+                <td>Amazon Web Services</td>
+                <td>Expires Jan 2025</td>
+              </tr>
+            </table> </span
+          ><br /><br />
+
+          <span>
+            <h3 id="skill">
+              <i class="fa-solid fa-computer-mouse" style="color: #3f51b5"></i
+              ><span class="bold"> SKILL</span>
+            </h3>
+            <p class="defineText">
+              Javascript, CSS, Html, React.js, Node.js, Java, Python, C, MySQL,
+              Linux, Shell, Git, Cloud Computing, R, ArcGIS
+            </p> </span
+          ><br /><br />
+        </div>
+      </content>
+    </div>
+  </body>
+</html>

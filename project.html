@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Qiong Peng's Website</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'sidebar content ';
+        grid-template-rows: minmax(auto, 250px) 2fr;
+        grid-template-columns: 0.6fr 2fr;
+      }
+      /* Header*/
+      header {
+        grid-area: header;
+        margin-top: -30px;
+      }
+      /* Content*/
+      content {
+        position: relative;
+        grid-area: content;
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+      sidebar {
+        grid-area: sidebar;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="shift">
+          <h1>Welcome to <span> Qiong Peng's Website</span></h1>
+          <h1></h1>
+          <ul class="navbar">
+            <div class="dropdown">
+              <li><a href="/index.html">HOME</a></li>
+              <div class="dropdown-content" role="menu">
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#certification">Certification</a>
+                <a href="#skill">Skill</a>
+              </div>
+            </div>
+            <li>
+              <a class="current" href="/project.html" target="_parent"
+                >PROJECTs</a
+              >
+            </li>
+            <li>
+              <a href="/publication.html" target="_parent">publications</a>
+            </li>
+            <li><a href="/algorithms.html">Algorithms</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <sidebar>
+        <div class="sticky">
+          <a class="setBlock" href="#cloud computing">Cloud Computing</a>
+          <a class="setBlock" href="#web application">Web Application</a>
+          <a class="setBlock" href="#python game">Python Game</a>
+          <a class="setBlock" href="#bot">Bot</a>
+          <a class="setBlock" href="#Design Portfolio">Design Portfolio</a>
+        </div>
+      </sidebar>
+
+      <content>
+        <div>
+          <h5 id="cloud computing">
+            <span class="bold"
+              >Scalable Distributed System for Ski Lift Ride Reader</span
+            >
+          </h5>
+          <ul>
+            <li>
+              Designed <span class="bold">RESTful</span> web application that
+              allow ski resorts to keep track of lift overloads
+            </li>
+            <li>
+              Implemented and tested on different scaling strategies in Java,
+              including
+              <span class="bold">load balancing, RabbitMQ, Kafka, Redis</span>
+              cache and distributed databases on
+              <span class="bold">RDS</span> and
+              <span class="bold">DynamoDB</span>, and evaluate performance on
+              different scaling strategies with key indexes, such as throughput,
+              average or median request processing time and P99
+            </li>
+            <li>
+              Optimized overall performance with the system structure on
+              multi-thread client and server that utilized Kafka and Redis
+              cache, deployed on <span class="bold">EC2</span> and adopt AWS
+              application layer load balancer with distributed RDS
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 id="web application">
+            <span class="bold">Soccer Squad Builder Web A pplication</span>
+          </h5>
+          <ul>
+            <li>
+              Designed and established <span class="bold">data-driven</span> web
+              application with following features: provided users with
+              functionality of current active player search, team search, player
+              sort, team sort. The web application implements
+              <span class="bold">authentication and authorization</span>. If you
+              are login users you can create customized team on your own by
+              selecting your favorite players and team strategy
+            </li>
+            <li>
+              Built <span class="bold">RESTful</span> web application with
+              <span class="bold">Java</span> and
+              <span class="bold">Tomcat servlet</span>, utilized
+              <span class="bold">MySQL</span> and
+              <span class="bold">JDBC</span> to ensure data storage and
+              accessibility
+            </li>
+            <li>
+              Created front-end webpages with <span class="bold">JSP</span> and
+              utilized <span class="bold">Bootstrap</span>,
+              <span class="bold">CSS</span> to improve styling and formats
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 id="python game"><span class="bold">Checkers Game</span></h5>
+          <ul>
+            <li>
+              Designed and developed a Checker game by using
+              <span class="bold">Python</span>
+            </li>
+            <li>
+              Adopt Processing to enable the computer and human interactions,
+              record and maintain score board for players
+            </li>
+            <li>
+              Realized <span class="bold">Artificial Intelligence</span> player
+              against human player with
+              <span class="bold">Monte Carlo simulation</span> that highly
+              increased game difficulty
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 id="bot"><span class="bold">DoorDash Bot</span></h5>
+          <ul>
+            <li>
+              Designed and developed a bot for DoorDash using
+              <span class="bold">Java</span> and Discord platform
+            </li>
+            <li>
+              Collaborated with teamates, developed and controled version via
+              Github
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 id="Design Portfolio">
+            <span class="bold">Design Portfolio</span>
+          </h5>
+          <br />
+          <div>
+            <img
+              class="portfolio"
+              src="/images/002六虹桥.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/004六虹桥.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/005六虹桥.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/006六虹桥.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/007综合货场.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/008综合货场.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/009综合货场效果图1.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/010大关长乐1.jpg"
+              alt="HTML5 Icon"
+            />
+            <img
+              class="portfolio"
+              src="/images/010大关长乐效果图.jpg"
+              alt="HTML5 Icon"
+            />
+          </div>
+        </div>
+      </content>
+    </div>
+  </body>
+</html>

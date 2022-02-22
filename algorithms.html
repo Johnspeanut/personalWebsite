@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Qiong Peng's Website</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <style>
+    .container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sidebar content ';
+  grid-template-rows: 0.9fr 2fr;
+  grid-template-columns: 0.6fr 2fr;
+}
+
+/* Header*/
+header {
+  grid-area: header;
+  margin-top: -30px;
+}
+/* Content*/
+content {
+  position: relative;
+  grid-area: content;
+  padding-left: 30px;
+  padding-top:30px;
+
+}
+sidebar{
+  grid-area:sidebar;
+  display: flex;
+  flex-direction: column;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="shift">
+          <h1>Welcome to <span>
+            Qiong Peng's
+             Website</span> </h1>
+          <h1></h1>
+          <ul class="navbar">
+            <div class="dropdown">
+            <li><a href="/index.html">HOME</a></li>
+            <div class="dropdown-content" role="menu">
+              <a href="#education">Education</a>
+              <a href="#experience">Experience</a>
+              <a href="#certification">Certification</a>
+              <a href="#skill">Skill</a>
+            </div>
+            </div>
+            <li><a href="/project.html" target="_parent">PROJECTs</a></li>
+            <li><a href="/publication.html" target="_parent">publications</a></li>
+            <li><a class="current" href="/algorithms.html">Algorithms</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <sidebar>
+        <a class="defineText" href="#housing studies">Graph</a>
+        <a class="defineText" href="#data analytics">Dynamic Programming</a>
+        <a class="defineText" href="#machine learning">Binary Tree</a>
+        <a class="defineText" href="#machine learning">Binary Search</a>
+      </sidebar>
+
+      <content class="defineText">
+
+        <p><a></p>
+    </content>
+    </div>
+  </body>
+</html>

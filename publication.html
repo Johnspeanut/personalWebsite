@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Qiong Peng's Website</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <style>
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sidebar content ';
+  grid-template-rows: 0.9fr 2fr;
+  grid-template-columns: 0.6fr 2fr;
+}
+
+/* Header*/
+header {
+  grid-area: header;
+  margin-top: -30px;
+}
+/* Content*/
+content {
+  position: relative;
+  grid-area: content;
+  padding-left: 30px;
+  padding-top:30px;
+
+}
+sidebar{
+  grid-area:sidebar;
+  display: flex;
+  flex-direction: column;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="shift">
+          <h1>Welcome to <span>
+            Qiong Peng's
+             Website</span> </h1>
+          <h1></h1>
+          <ul class="navbar">
+            <div class="dropdown">
+            <li><a href="/index.html">HOME</a></li>
+            <div class="dropdown-content" role="menu">
+              <a href="#education">Education</a>
+              <a href="#experience">Experience</a>
+              <a href="#certification">Certification</a>
+              <a href="#skill">Skill</a>
+            </div>
+            </div>
+            <li><a href="/project.html" target="_parent">PROJECTs</a></li>
+            <li><a class="current" href="/publication.html" target="_parent">publications</a></li>
+            <li><a href="/algorithms.html">Algorithms</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <sidebar>
+        <a href="#housing studies">Housing Studies</a>
+        <a href="#data analytics">Data Analytics</a>
+        <a href="#machine learning">Machine Learning</a>
+      </sidebar>
+
+      <content>
+        <p id="housing studies"><a>Peng, Q., & Knaap, G. J. (2021). Investigating the effects of service and management on multifamily rents: a multilevel linear model approach. Journal of Housing and the Built Environment, 36(3), 991-1009. </a><a href="/pdf/service.pdf">PDF</a></p>
+        <p><a>Zhang, X., Zheng, Y., Ye, X., Peng, Q., Wang, W., & Li, S. (2021). Clustering with implicit constraints: A novel approach to housing market segmentation. Transactions in GIS. </a><a href="/pdf/constrained_clustering.pdf">PDF</a></p>
+        <p><a>Gong, J., Li, S., Ye, X., Peng, Q., & Kudva, S. (2021). Modelling impacts of high-speed rail on urban interaction with social media in China’s mainland. Geo-spatial Information Science, 24(4), 638-653. </a><a href="/pdf/highspeedrail.pdf">PDF</a></p>
+        <p><a>Fang, L., Howland, M., Kim, J., Peng, Q., & Wu, J. (2019). Can transfer of development rights programs save farmland in metropolitan counties?. Growth and Change, 50(3), 926-946. </a><a href="/pdf/tdr.pdf">PDF</a></p>
+        <p id="data analytics"><a>Ye, X., Li, S., & Peng, Q. (2021). Measuring interaction among cities in China: A geographical awareness approach with social media data. Cities, 109, 103041. </a><a href="/pdf/cities.pdf">PDF</a></p>
+        <p><a>Peng, Q., & Ye, X. (2021). Research trends in social media/big data with the emphasis on data collection and data management: A bibliometric analysis. Empowering Human Dynamics Research with Social Media and Geospatial Data Analytics, 47-63. </a><a href="/pdf/PengYe21.pdf">PDF</a></p>
+        <p><a>Eom, H., Peng, Q., & Wortham, M. (2018). Silver Spring Civic Building and Veteran’s Plaza Economic Impact Analysis FY-2017. Partnership for Action Learning in Sustainability (PALS). </a><a href="/pdf/SilverSpring.pdf">PDF</a></p>
+        <p id="machine learning"><a>Ye, X., Duan, L., & Peng, Q. (2021). Spatiotemporal prediction of theft risk with deep inception-residual networks. Smart Cities, 4(1), 204-216. </a><a href="/pdf/smartcities.pdf">PDF</a></p>
+        <p><a></p>
+    </content>
+    </div>
+  </body>
+</html>
