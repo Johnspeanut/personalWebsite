@@ -1,6 +1,6 @@
 # 1.Link to my website
 
-http://cs5610-qiongpeng.s3-website-us-east-1.amazonaws.com/personal_website.html
+http://cs5610-qiongpeng.s3-website-us-east-1.amazonaws.com/
 
 # 2. Link to my Github repo
 
